@@ -1,8 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const sorter_1 = require("./sorter");
-const NumbersCollections_1 = require("./NumbersCollections");
-const numbers = new NumbersCollections_1.NumbersCollections([10, 3, -5, 0]);
-const sorter = new sorter_1.Sorter(numbers);
-sorter.sort();
-console.log(numbers.data);
+const LinkedList_1 = require("./LinkedList");
+// const numbers = new NumbersCollections([10, 52, -5, 0])
+// numbers.sort();
+// console.log(numbers.data);
+// const characters = new CharactersCollections('Xybn')
+// characters.sort();
+// console.log(characters.data);
+const linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.sort();
+linkedList.print();
